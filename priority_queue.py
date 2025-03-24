@@ -50,4 +50,3 @@ class PriorityQueue:
 
   def _swap(self, i, j):
     self.heap[i], self.heap[j] = self.heap[j], self.heap[i]
-      break
