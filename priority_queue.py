@@ -22,7 +22,7 @@ class PriorityQueue:
   def _sift_up(self, index):
     while index > 0:
       parent_index = (index - 1) // 2
-      if self.heap[parent_index][0] > self.heap[index][0]:
+      if self.heap[parent_index][0] < self.heap[index][0]:
         self._swap(parent_index, index)
         index = parent_index
       else:
